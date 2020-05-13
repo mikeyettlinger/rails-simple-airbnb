@@ -7,9 +7,18 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
+
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">Simple Airbnb</a>
+      <%= link_to 'New Listing', new_flat_path %> |
+    </nav>
+
     <%= yield %>
   </body>
 </html>
